@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div
+      class="container w-1/2 p-4 bg-gray-200 mx-auto mt-5 flex flex-col space-y-3 items-center justify-center"
+    >
+      <h1 class="text-3xl font-bold">Welcome to Home Page</h1>
+      <h3 data-th-text="${name}"></h3>
+      <p class="text-xs text-gray-800">
+        Youtube Channel : <span data-th-text="${youtubeChannel}" />
+      </p>
+
+      <a th:href="${githubProfile}"> Github Profile Link</a>
+      <p class="">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+        repellat aspernatur quaerat aliquam, delectus veritatis cumque, nulla
+        mollitia ratione accusantium nemo quae perspiciatis provident vitae
+        incidunt laborum fugiat commodi ducimus corporis odit, animi aut minus
+        explicabo dolore. Eligendi facilis tenetur totam, quo perferendis sed,
+        sit architecto sunt nihil repellat obcaecati commodi dolores. Ab, enim
+        nesciunt quos quam voluptatem doloribus excepturi incidunt delectus
+        blanditiis perferendis, dicta a eveniet rem ducimus recusandae similique
+        modi vel accusantium illum nihil illo. Magnam rerum in quidem dolor
+        iste, molestias, consequatur sunt voluptatibus neque nostrum ex aperiam,
+        dolores commodi eveniet? Perspiciatis dolores minima vel ut animi.
+      </p>
+      <div>
+        <button
+          class="px-3 py-2 bg-blue-700 hover:bg-blue-600 rounded-lg text-white"
+        >
+          Click here
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
